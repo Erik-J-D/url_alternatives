@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import sys
 
 from collections import defaultdict
@@ -7,7 +9,6 @@ if len(sys.argv) < 2:
     print(
         "Missing arguments. Usage:  $ url_generator.py mydomain.com domain2.org etc.net"
     )
-
 
 # Read in confusables.txt, turn into dictionary lookup
 with open("confusables.txt", "r", encoding="utf-8-sig") as f:
